@@ -32,7 +32,15 @@ def process_url(url: str, validator: URLValidator, domain_regex: str) -> []:
     # HTTP request denied
     try:
         with urllib.request.urlopen(url) as response:
+
+            # check for html content
+            content_type = response.getheader('Content-Type')
+            if not bool(search('.*html.*', content_type)):
+                print('Non-html content')
+                return [], []
+
             html = response.read()
+
     except urllib.error.HTTPError:
         print('HTTP request denied')
         return [], []
@@ -47,18 +55,22 @@ def process_url(url: str, validator: URLValidator, domain_regex: str) -> []:
 
 while len(urls) > 0:
 
+    print('Queue size: %d' % len(urls))
+    print('Checked urls: %d' % len(checked_urls))
+
     actual_url = urls[0]
     checked_urls.append(urls.pop(0))
+    print('Added ')
 
     new_urls, new_images = process_url(actual_url, valid, domain_regex_front)
 
-    # TODO: check for duplicities
-    urls += [url for url in new_urls if url not in urls]
+    # we need to check both queue and old urls
+    urls += [url for url in new_urls if
+             (url not in checked_urls) and
+             (url not in urls)]
     images += [image for image in new_images if image not in images]
 
-    pass
-
-print(urls)
+print('Amount of images found: %d' % len(images))
 
 
 
