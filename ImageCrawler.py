@@ -1,5 +1,7 @@
-import urllib.request
+import urllib.request, urllib.error
 from bs4 import BeautifulSoup
+from django.core.validators import URLValidator
+from django.core.exceptions import ValidationError
 
 base_url = 'http://exponea.com'
 urls = [base_url]
@@ -11,39 +13,26 @@ def process_url(url: str) -> []:
 
     print('Processing url: %s' % url)
 
-    with urllib.request.urlopen(url) as response:
-        html = response.read()
-        bfsoup = BeautifulSoup(html, 'html.parser')
+    validate = URLValidator()
+    try:
+        validate(url)
+    except ValidationError:
+        print('Incorrect URL')
+        return [], []
 
-        new_urls = [link['href'] for link in bfsoup.find_all('a', href=True)]
-        new_images = [link['src'] for link in bfsoup.find_all('img', src=True)]
+    try:
+        with urllib.request.urlopen(url) as response:
+            html = response.read()
+    except urllib.error.HTTPError:
+        print('HTTP request denied')
+        return [], []
 
-        return new_urls, new_images
+    bfsoup = BeautifulSoup(html, 'html.parser')
 
+    fetched_urls = [link['href'] for link in bfsoup.find_all('a', href=True)]
+    fetched_images = [link['src'] for link in bfsoup.find_all('img', src=True)]
 
-def get_all_urls(a_refs: []) -> []:
-
-    urls = []
-
-    for link in a_refs:
-        urls.append(link.get('href'))
-
-    return urls
-
-
-# Extracts image URLs from a list of <img> HTML tags
-# Returns a list of URL strings
-# Example:
-#   [<img src="https://exponea.com/randomimage.png" class="platform-overview__image"/>]
-#       -> [https://exponea.com/randomimage.png]
-def get_all_images(img_refs: []) -> []:
-
-    urls = []
-
-    for link in img_refs:
-        urls.append(link.get('src'))
-
-    return urls
+    return fetched_urls, fetched_images
 
 
 while len(urls) > 0:
