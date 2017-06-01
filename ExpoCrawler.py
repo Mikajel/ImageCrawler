@@ -77,7 +77,7 @@ class ImageCrawler:
 
     def _target_domain_verify(self, url, permitted_domains, log):
 
-        if any([bool(search(domain, url)) for domain in permitted_domains]):
+        if any([bool(search('^'+domain, url)) for domain in permitted_domains]):
             return True
         else:
             log.info('No match for permitted domains at URL: %s' % url)
