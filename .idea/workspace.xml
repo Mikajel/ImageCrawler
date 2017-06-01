@@ -1,7 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="563cd883-b4b8-4c1a-9c90-4498a194292a" name="Default" comment="" />
+    <list default="true" id="563cd883-b4b8-4c1a-9c90-4498a194292a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ExpoCrawler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FileHandler.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Properties.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/0031-e1476856809250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/2a93e8a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/366x172_case-studies_ZOOT.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/AAEAAQAAAAAAAAcGAAAAJDM1YTZhMDEwLWFlZTItNDY2My1iNmQ5LTA4MDU0YmYyZWUzNw.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Kiwicom-e1476084139830.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Olivia-e1476856650830.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/THUMBNAIL_ElectronicStar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/THUMBNAIL_Nahodsa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Zoot_logo_03-e1484666754785.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Zoot_product.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ab-testing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/aggregates.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/almost-sold-out-1600x1000.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/amazon-alexa-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/amazon-alexa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/analytics-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/analytics-screen-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/analytics-screen-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/analytics-screen-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/attribution.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/automatic-emails-for-birthdays-name-days.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/badge-capterra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/badge-g2crowd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/badge-getapp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/badge-risingstar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-use-cases-acquisition.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-use-cases-conversion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-use-cases-retention.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bigquery.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blank-xs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/blink-bytes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/box.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/campaign-screen-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/campaign-screen-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/campaign-screen-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/campaign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/campaigns.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-birthday-newsletter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-cart-abandonment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-customer-segmentation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-dynamic-timing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-life-cycle-automation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-omnichannel-lead-generation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-one-time-banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-personalised-incentives.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-recommendation-in-abandoned-cart-email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-scroll-banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/carousel-upsell-recomendation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cart-abandonment-email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/channel-browser-notifications.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/channel-mass-emailing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/channel-messenger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/channel-other.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/channel-sms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/contact-map-blank.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cov_dennikn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cov_ihned.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cov_telco.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/cross-channel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/customer-segmentation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/customer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/dashboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/electronicStar_logo-e1485435351398.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/electronicStar_product-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/elefant_THUMBNAIL1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/elefant_logo_03-e1486384358193.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/elefant_product.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/email-editor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/email-templates.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/emails-delivered-timely-for-each-customer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/exponea-command-center.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/exponea-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/facebook-ads.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/facebook-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/flipchart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/funnel.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/funnels-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/grey-dark-deliveryhero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/grey-dark-elefant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/grey-dark-kiwi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/grey-dark-ogilvy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/grey-dark-sygic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/guarantee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/hadoop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/import-wizard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/integrations-screen-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/integrations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/jinja.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/kiwi-card.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/linkedin-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo-IHNED-nahled.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo_new-e1476343658182.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/measurement-screen-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/measurement-screen-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/megaphone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/metrics.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/mysql.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/nahodsa_logo_03-e1486038885540.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/omni-channel-lead-generation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/one-time-banner-1600x1000.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/overview-customer-single.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/overview-integrations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/overview-scenario-ai.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/personalised-incentives-1600x1000.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/photo-1423784346385-c1d4dac9893a.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pic_article-recommendation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pic_conversionfunnel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/pic_personalization.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/portraits.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/postgresql.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/prediction.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/product_allBrands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/quote-johnny-quach-rocket-internet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/realtime-personalization.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/recommendation-in-abandoned-cart-email-1600x1000.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/recommendations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/retention-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/rfm-life-cycle-automation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/rocket.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/safe.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/screen-head.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/screencapture-kiwi-en-search-edinburgh-united-kingdom-los-angeles-united-states-2016-10-10-1476083338133.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/scrolling-banner-1600x1000.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/segmentation-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/shopify.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/sql.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/target.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/topankovo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/topankovo_logo-e1484666855784.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/topankovo_product.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/tr?id=512339635639863&amp;ev=PageView&amp;noscript=1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/triggered-campaigns.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/twitter-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/upsell-with-similar-recommendations-aI-driven-800x500.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/use-cases-retention-scenario.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/web-banners-dynamic-timing-1600x1000.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/web-layers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/websupport-card.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/why-cloud-ico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/why-platform-ico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/why-screen-ico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/zapier.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ImageCrawler.py" afterPath="$PROJECT_DIR$/ImageLoader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="exponea_tutorial.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -13,7 +164,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/exponea_tutorial$Something.coverage" NAME="Something Coverage Results" MODIFIED="1495820432019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/exponea_tutorial$Something.coverage" NAME="Something Coverage Results" MODIFIED="1496347656777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/exponea_tutorial$Example.coverage" NAME="Example Coverage Results" MODIFIED="1495796445579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -24,14 +175,50 @@
     <favorites_list name="exponea_tutorial" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ImageCrawler.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ImageCrawler.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ImageLoader.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ImageLoader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-338">
-              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            <state relative-caret-position="252">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Properties.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Properties.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FileHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpoCrawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ExpoCrawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="75" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,12 +233,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Example.py" />
         <option value="$PROJECT_DIR$/Something.py" />
         <option value="$PROJECT_DIR$/ImageCrawler.py" />
+        <option value="$PROJECT_DIR$/Properties.py" />
+        <option value="$PROJECT_DIR$/ExpoCrawler.py" />
+        <option value="$PROJECT_DIR$/ImageLoader.py" />
+        <option value="$PROJECT_DIR$/FileHandler.py" />
       </list>
     </option>
   </component>
@@ -92,7 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -114,6 +307,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -154,7 +348,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="exponea_tutorial" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageCrawler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ImageLoader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -242,6 +436,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -395,17 +595,17 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37916666" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30572918" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979655" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -441,20 +641,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Example.py">
+    <entry file="file://$PROJECT_DIR$/Example.py" />
+    <entry file="file://$PROJECT_DIR$/ExpoCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="273">
+          <caret line="13" column="75" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageCrawler.py">
+    <entry file="file://$PROJECT_DIR$/Properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="231">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImageLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
