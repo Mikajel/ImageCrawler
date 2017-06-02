@@ -1,4 +1,4 @@
-from os import path
+from os import path, stat, mkdir
 import logging
 import datetime
 from imghdr import what
@@ -50,6 +50,9 @@ class DownloadHandle(object):
     def _save_image(self, data: response, dir_save: str):
 
         image = data.read()
+        if not path.exists(dir_save):
+            mkdir(dir_save)
+
         with open(path.join(dir_save, self._assign_filename(image)), 'wb') as localFile:
             localFile.write(image)
 
@@ -65,9 +68,10 @@ class LoggingHandle(object):
     def __init__(self, dir_logging):
 
         logging.basicConfig(
-            filename=path.join(dir_logging, self._get_filename()),
+            filename=path.join(dir_logging, self._assign_filename()),
             filemode='w',
             level=logging.DEBUG)
+        
         self.info('Logging initialized')
 
     def info(self, msg: str):
@@ -82,7 +86,7 @@ class LoggingHandle(object):
         time_str = datetime.datetime.now().strftime('  %Y-%m-%d %H:%M:%S')
         logging.error(time_str + ' - ' + msg)
 
-    def _get_filename(self):
+    def _assign_filename(self):
         return datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')+'.log'
 
 

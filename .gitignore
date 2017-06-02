@@ -1,0 +1,39 @@
+# ignore list for git file tracking
+
+# PyCharm
+.idea
+
+logs/*
+imgs/*
+
+# standard text editor backups
+*.pyo
+*.pyc
+*.bak
+*.swp
+*~
+
+# compiled bytecode of python3
+__pychache__
+
+# packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+
