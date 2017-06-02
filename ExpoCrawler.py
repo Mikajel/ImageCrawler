@@ -7,14 +7,15 @@ from bs4 import BeautifulSoup
 from FileHandler import DownloadHandle
 
 
-class ImageCrawler:
+class ImageCrawler(object):
     """
     Crawls images from given url
     Stays within specified domains
     Images are saved into working directory, under subfolder specified in property file
     """
 
-    _url_validator = URLValidator()
+    def __init__(self):
+        self.url_validator = URLValidator()
 
     def crawl_images(self, start_url, permitted_domains, dir_save, log):
 
@@ -52,9 +53,9 @@ class ImageCrawler:
     def _url_verify(self, url, permitted_domains, log):
 
         try:
-            ImageCrawler._url_validator(url)
+            self.url_validator(url)
         except ValidationError:
-            log.error('Incorrect format of URL: %s' % url)
+            log.error('Incorrect format of URL: {:40}'.format(url))
             return False
 
         return self._target_domain_verify(url, permitted_domains, log)
@@ -70,7 +71,12 @@ class ImageCrawler:
                     return response.read()
 
         except urllib.error.HTTPError:
-            log.error('HTTP request denied at URL %s' % url)
+            log.error('HTTP request denied at URL: {:40}'.format(url))
+            return None
+
+        except urllib.error.URLError:
+            log.error('HTTP request failed at URL: {:40}'.format(url))
+            log.info('Check Internet connection or proxy settings')
             return None
 
         return None
@@ -80,5 +86,5 @@ class ImageCrawler:
         if any([bool(search('^'+domain, url)) for domain in permitted_domains]):
             return True
         else:
-            log.info('No match for permitted domains at URL: %s' % url)
+            log.info('No match for permitted domains at URL: {:40}'.format(url))
             return False

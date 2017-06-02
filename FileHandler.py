@@ -8,15 +8,16 @@ from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 
 
-
-class DownloadHandle:
+class DownloadHandle(object):
     """
     Class for manipulation of downloaded files
     Handles exceptions and saving to local disk
     """
 
-    _filename_enum = 0
-    _url_validator = URLValidator()
+    __filename_enum = 0
+
+    def __init__(self):
+        self.url_validator = URLValidator()
 
     def _assign_filename(self, data):
 
@@ -26,21 +27,21 @@ class DownloadHandle:
         else:
             file_type = '.' + file_type
 
-        DownloadHandle._filename_enum += 1
-        return 'image_' + str(self._filename_enum).zfill(4) + file_type
+        DownloadHandle.__filename_enum += 1
+        return 'image_' + str(self.__filename_enum).zfill(4) + file_type
 
     def download_image(self, url: str, dir_save: str, log):
 
         try:
-            self._url_validator(url)
+            self.url_validator(url)
         except ValidationError:
-            log.error('Incorrect format of URL: %s' % url)
+            log.error('Incorrect format of URL: {:40}'.format(url))
             return
 
         try:
             img_data = request.urlopen(url)
         except UnicodeEncodeError:
-            log.error('Unsupported URL encoding at: %s' % url)
+            log.error('Unsupported URL encoding at: {:40}'.format(url))
             return
 
         if img_data:
@@ -56,7 +57,7 @@ class DownloadHandle:
         return what('', h=data)
 
 
-class LoggingHandle:
+class LoggingHandle(object):
     """
     Methods for logging errors and warnings into dedicated local file
     """
