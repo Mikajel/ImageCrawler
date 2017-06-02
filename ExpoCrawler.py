@@ -19,17 +19,19 @@ class ImageCrawler(object):
 
     def crawl_images(self, start_url, permitted_domains, dir_save, log):
 
-        urls = [start_url]
-        checked_urls = []
-        images = []
+        urls = {start_url}
+        checked_urls = set()
+        images = set()
         dl_handle = DownloadHandle()
 
         while urls:
-            new_urls, new_images = self._crawl_url(urls[0], permitted_domains, log)
-            checked_urls.append(urls.pop(0))
 
-            urls = list(set(urls + [url for url in new_urls if url not in checked_urls]))
-            images = list(set(images + new_images))
+            next_url = urls.pop()
+            new_urls, new_images = self._crawl_url(next_url, permitted_domains, log)
+            checked_urls.add(next_url)
+
+            urls = urls.union(new_urls - checked_urls)
+            images = images.union(new_images)
 
         for url in images:
             dl_handle.download_image(url, dir_save, log)
@@ -41,12 +43,12 @@ class ImageCrawler(object):
         html_content = self._get_content(url, permitted_domains, log)
 
         if not html_content:
-            return [], []
+            return set(), set()
 
         soup = BeautifulSoup(html_content, 'html.parser')
 
-        fetched_urls = [link['href'] for link in soup.find_all('a', href=True)]
-        fetched_images = [link['src'] for link in soup.find_all('img', src=True)]
+        fetched_urls = {link['href'] for link in soup.find_all('a', href=True)}
+        fetched_images = {link['src'] for link in soup.find_all('img', src=True)}
 
         return fetched_urls, fetched_images
 

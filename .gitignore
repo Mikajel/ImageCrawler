@@ -1,10 +1,15 @@
 # ignore list for git file tracking
 
+# git
+README.md
+
 # PyCharm
-.idea
+.idea/*
 
 logs/*
-imgs/*
+img/*
+logs
+img
 
 # standard text editor backups
 *.pyo
