@@ -67,11 +67,14 @@ class LoggingHandle(object):
 
     def __init__(self, dir_logging):
 
+        if not path.exists(dir_logging):
+            mkdir(dir_logging)
+
         logging.basicConfig(
             filename=path.join(dir_logging, self._assign_filename()),
             filemode='w',
             level=logging.DEBUG)
-        
+
         self.info('Logging initialized')
 
     def info(self, msg: str):
