@@ -1,11 +1,26 @@
-from os.path import join
-from os import getcwd
+import datetime
+import logging
+from os import getcwd, mkdir
+from os.path import join, exists
 
 # search settings
-# FIXME: Searching might get slow if list contains too many sites
-domain_permissions = ['https://exponea.com']
+domain_permissions = {'https://exponea.com'}
 start_url = 'https://exponea.com'
 
 # local working directory
 dir_target = join(getcwd(), 'img')
 dir_logging = join(getcwd(), 'logs')
+
+
+def log_init():
+    if not exists(dir_logging):
+        mkdir(dir_logging)
+
+    logging.basicConfig(
+        filename=join(
+            dir_logging,
+            datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + '.log'),
+        filemode='w',
+        level=logging.DEBUG)
+
+    logging.info('Logging initialized')

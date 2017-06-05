@@ -1,9 +1,9 @@
+import logging
 from os import path, mkdir
+
 from imghdr import what
-from urllib import request
-from urllib import response
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
+from urllib import response, request
+from django.core.validators import URLValidator, ValidationError
 
 
 class DownloadHandle(object):
@@ -12,9 +12,8 @@ class DownloadHandle(object):
     Handles exceptions and saving to local disk
     """
 
-    __filename_enum = 0
-
     def __init__(self):
+        self._filename_enum = 0
         self.url_validator = URLValidator()
 
     def _assign_filename(self, data):
@@ -25,21 +24,21 @@ class DownloadHandle(object):
         else:
             file_type = '.' + file_type
 
-        DownloadHandle.__filename_enum += 1
-        return 'image_' + str(self.__filename_enum).zfill(4) + file_type
+        self._filename_enum += 1
+        return 'image_{:04d}{}'.format(self._filename_enum, file_type)
 
-    def download_image(self, url: str, dir_save: str, log):
+    def download_image(self, url: str, dir_save: str):
 
         try:
             self.url_validator(url)
         except ValidationError:
-            log.error('Incorrect format of URL: {:40}'.format(url))
+            logging.error('Incorrect format of URL: {:40}'.format(url))
             return
 
         try:
             img_data = request.urlopen(url)
         except UnicodeEncodeError:
-            log.error('Unsupported URL encoding at: {:40}'.format(url))
+            logging.error('Unsupported URL encoding at: {:40}'.format(url))
             return
 
         if img_data:
@@ -51,8 +50,13 @@ class DownloadHandle(object):
         if not path.exists(dir_save):
             mkdir(dir_save)
 
-        with open(path.join(dir_save, self._assign_filename(image)), 'wb') as localFile:
-            localFile.write(image)
+        filename = path.join(dir_save, self._assign_filename(image))
+        try:
+            with open(filename, 'wb') as localFile:
+                localFile.write(image)
+        except IOError:
+            logging.error('Cannot write to file: {}'.format(filename))
 
-    def _get_image_type(self, data):
+    @staticmethod
+    def _get_image_type(data):
         return what('', h=data)
