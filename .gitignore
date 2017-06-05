@@ -1,15 +1,11 @@
 # ignore list for git file tracking
 
-# git
-README.md
-
 # PyCharm
 .idea/*
 
 logs/*
 img/*
-logs
-img
+hellanotes.txt
 
 # standard text editor backups
 *.pyo

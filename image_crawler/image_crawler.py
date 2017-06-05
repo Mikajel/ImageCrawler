@@ -1,10 +1,12 @@
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
 import urllib
-from urllib import request, error
 from re import search
+from urllib import request, error
+
 from bs4 import BeautifulSoup
-from FileHandler import DownloadHandle
+from django.core.exceptions import ValidationError
+from django.core.validators import URLValidator
+
+from image_crawler.download_handle import DownloadHandle
 
 
 class ImageCrawler(object):
@@ -83,7 +85,8 @@ class ImageCrawler(object):
 
         return None
 
-    def _target_domain_verify(self, url, permitted_domains, log):
+    @staticmethod
+    def _target_domain_verify(url, permitted_domains, log):
 
         if any([bool(search('^'+domain, url)) for domain in permitted_domains]):
             return True
