@@ -4,8 +4,8 @@ from os import getcwd, mkdir
 from os.path import join, exists
 
 # search settings
-domain_permissions = {'https://exponea.com'}
-start_url = 'https://exponea.com'
+domain_permissions = {'https://winfreetoiletpaper.com'}
+start_url = 'https://winfreetoiletpaper.com'
 
 # local working directory
 dir_target = join(getcwd(), 'img')
